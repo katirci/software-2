@@ -9,7 +9,7 @@ header{
 }
 .header-container{
     display: flex;
-    max-width: 900px;
+    max-width: 1180px;
     justify-content: space-between;
     margin: 25px auto;
     align-items: center;
@@ -48,21 +48,22 @@ form{
     align-items: center;
 }
 .search-container{
-    width: 40%;
+    width: 43%;
 }
 .search-container img{
     position: absolute;
-    margin: 0 5px;
+    margin: 0 26px;
 }
 .search{
     flex-grow: 1;
     border-radius: 30px;
     height: 36px;
     border: none;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 .search::placeholder{
-    text-align: center;
+    text-align: left;
+    padding-left: 18,69px;
 }
 
 .search:focus::placeholder{
@@ -83,7 +84,7 @@ form{
     border: 1px solid none;
     background-color: white;
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0 7px;
    
 }
 
@@ -107,7 +108,7 @@ background-color: rgba(255, 169, 2, 1);
     fill: wheat;
 }
 .menu-container{
-    max-width: 900px;
+    max-width: 1180px;
     margin: 20px auto 0 auto;
     border-top: 1px groove rgba(255, 255, 255, 0.6);
 }
@@ -172,29 +173,35 @@ ul li:hover ul{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    max-width: 900px;
+    max-width: 1000px;
     margin:  auto;
   }
 .section-head{
-    font-size: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 75px;
     color: white;
     line-height: 112.5px;
     font-weight: 700;
+    text-align: center;
 
 }
 .section-article{
-    margin-top: 30px;
+    max-width: 865px;
     line-height: 29.45px;
     font-weight: 400;
     font-size: 15px;
     color: white;
+    text-align: center;
+    margin-top: 28px;
 }
 .section-title{
-    font-size: 30px;
+    margin-top: 28px;
+    font-size: 36px;
     line-height: 70.67px;
     font-weight: 700;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 720px){
 
 .header-container{
     display: flex;
