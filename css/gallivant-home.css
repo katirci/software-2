@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: absolute;
+    width: 100%;
+}
+.header-container{
+    display: flex;
+    max-width: 900px;
+    justify-content: space-between;
+    margin: 25px auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-container{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/woman-traveler-with-backpack-walking-yasaka-pagoda-sannen-zaka-street-kyoto-japan\ 1.png);
+}
+.home-overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+}
+.mobile-menu-container{
+    display: none;
+}
+
+.head-title-link{
+    color: white;
+    text-decoration: none;
+}
+.head-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+.text-orange{
+    color: rgba(255, 169, 2, 1);
+}
+form{
+    display: flex;
+    align-items: center;
+}
+.search-container{
+    width: 40%;
+}
+.search-container img{
+    position: absolute;
+    margin: 0 5px;
+}
+.search{
+    flex-grow: 1;
+    border-radius: 30px;
+    height: 36px;
+    border: none;
+    padding-left: 30px;
+}
+.search::placeholder{
+    text-align: center;
+}
+
+.search:focus::placeholder{
+        color: transparent;
+        
+}
+
+.social-media{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.social-media-icon{
+    width: 36px;
+    height: 36px;
+    border: 1px solid none;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+   
+}
+
+.social-media-icon:hover{
+background-color: rgba(255, 169, 2, 1);
+
+
+}
+.social-media-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+}
+
+.svg-color{
+    fill: rgba(0,0,0,0.7);
+    
+}
+.social-media-icon:hover .svg-color{
+    fill: wheat;
+}
+.menu-container{
+    max-width: 900px;
+    margin: 20px auto 0 auto;
+    border-top: 1px groove rgba(255, 255, 255, 0.6);
+}
+.menu-title{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.menu-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    transition: color 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-link:hover{
+    color: rgba(255, 169, 2, 1);
+    
+}
+.menu-svg{
+    fill: white;
+}
+
+.menu-link:hover .menu-svg{
+    fill: rgba(255, 169, 2, 1);
+}
+.menu svg{
+    margin-left: 3px;
+}
+.menu{
+    position: relative;
+  
+}
+.hidden-menu{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 150px;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  list-style: none;
+  color: rgba(255, 169, 2, 1);
+}
+ul li:hover ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    max-width: 900px;
+    margin:  auto;
+  }
+.section-head{
+    font-size: 40px;
+    color: white;
+    line-height: 112.5px;
+    font-weight: 700;
+
+}
+.section-article{
+    margin-top: 30px;
+    line-height: 29.45px;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+.section-title{
+    font-size: 30px;
+    line-height: 70.67px;
+    font-weight: 700;
+}
+@media only screen and (max-width: 600px){
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .social-media-container{
+    margin-top: 10px;
+ }
+.menu{
+    width: 100%;
+}
+
+.section-head{
+    font-size: 25px;
+    margin-top: 50px;
+}
+.section-article{
+    font-size:10px;
+}
+.section-title{
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 500;
+
+}
+.menu-link{
+    font-size: 20px;
+    line-height: 30px;
+}
+.search-container{
+    width:auto;
+    display: none;
+}
+.social-media-container{
+    display: none;
+}
+.mobile-menu-container{
+    display: block;
+}
+.mobile-menu ul{
+    list-style: none;
+}
+.mobile-menu ul li{
+    margin: 4px 0 4px 0;
+    width: 20px;
+    background: white;
+    transition: background-color 2s;
+}
+.mobile-menu ul li:hover{
+
+    background-color: rgba(255, 169, 2, 1);
+}
+}
