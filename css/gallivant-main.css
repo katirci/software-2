@@ -1,7 +1,97 @@
-.category-contianer{
-    margin-top: 100px;  
+.header-container{
+  display: flex;
+  max-width: 1300px;
+  margin: 25px auto;
+  justify-content: space-evenly;
+  align-items:center;
+}
+.logo-link{
+  font-size: 36px;
+}
+.menu-title{
+  display: flex;
+  list-style: none;
+
+}
+.menu{
+  margin: 0 20px;
+  font-size: 30px;
+}
+.menu-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: orange;
+  transition: background-color 1s;
+  transition: color 1s;
+}
+.menu-link:hover{
+  color: black;
+  background-color: wheat;
+}
+.menu-list{
+  list-style: none;
+  display: block;
+  padding-inline-start: 0;
+
+}
+.menu-list li{
+  border-bottom: 1px solid black;
+  margin: 4px 0 4px 0;
+  width: 20px;
+}
+
+.mobile-menu{
+  position: relative;
+  display: none;
+}
+.hamburger-menu-input{
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  opacity: 0;
+}
+.hamburger-menu-container{
+  display: none;
+}
+.mobile-menu-container{
+  display: none;
+}
+@media only screen and (max-width: 720px){
+  .menu-head{
+    display: none;
+  }
+  .mobile-menu{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+  }
+  span{
+    
+      display: flex;
+      flex-direction: column;
+      
+    
+  }
+  .hamburger-menu{
+    list-style: none;
+    width: 100%;
+  }
+  input[type="checkbox"]:checked ~ .hamburger-menu-container{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 2%;
+  }
+  input[type="checkbox"]:checked ~
+  .menu{
+    font-size: 20px;
+    text-align: center;
+  }
+  .hamburger-menu{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+  }
 }
