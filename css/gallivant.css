@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 header{
-    position: absolute;
+    position: fixed;
     width: 100%;
 }
 .header-container{
@@ -277,6 +277,20 @@ background-color: rgba(255, 169, 2, 1);
         width: 40%;
     }
 } */
+@media only screen and (max-width: 906px){
+    .article{
+        padding: 0 10px 0 10px;
+    }
+    .article h1{
+        font-size: 42px;
+    }
+    .article p{
+        font-size: 14px;
+    }
+    .aricle h4{
+        font-size: 26px;
+    }
+}
 @media only screen and (max-width: 720px){
     .search-input-container{
         display: none;
@@ -294,19 +308,6 @@ background-color: rgba(255, 169, 2, 1);
     width: 100%;
 }
 
-.section-head{
-    font-size: 25px;
-    margin-top: 50px;
-}
-.section-article{
-    font-size:10px;
-}
-.section-title{
-    font-size: 24px;
-    line-height: 50px;
-    font-weight: 500;
-
-}
 .menu-container{
     display: none;
 }
@@ -329,6 +330,7 @@ background-color: rgba(255, 169, 2, 1);
 }
 .mobile-menu{
     position: relative;
+    z-index: 45;
 }
 .mobile-menu-checkbox{
     position: absolute;
@@ -347,6 +349,7 @@ background-color: rgba(255, 169, 2, 1);
 
 .mobile-menu-icon{
     display: block;
+    z-index: 34;
     
 }
 input[type="checkbox"]:checked ~ .mobile-menu-icon{
@@ -374,19 +377,31 @@ input[type="checkbox"]:checked ~ .mobile-submenu-container {
     text-align: center;
     justify-content: center;
     background-color: black;
-    z-index: 1;
+    z-index: -1;
     opacity: 0.9;
 
 }
 .mobile-submenu-link{
     text-decoration: none;
     color: white;
-    font-size: 36px;
+    font-size: 30px;
 }
 .mobile-submenu{
     z-index: 15;
     background-color: black;
     text-align: center;
     margin: 10px 0;
+}
+.article{
+    padding: 0 10px 0 10px;
+}
+.article h1{
+    font-size: 30px;
+}
+.article p{
+       font-size:  10px;
+}
+.article h4{
+    font-size: 20px;
 }
 }
