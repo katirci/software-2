@@ -9,20 +9,22 @@ header{
 }
 .header-container{
     display: flex;
-    max-width: 1180px;
     justify-content: space-between;
     margin: 25px auto;
     align-items: center;
     flex-wrap: wrap;
 }
-.overlay-container{
+.max-width-container{
+    max-width: 1180px;
+}
+.showcase-overlay-container{
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
     background-image: url(../images/woman-traveler-with-backpack-walking-yasaka-pagoda-sannen-zaka-street-kyoto-japan\ 1.png);
 }
-.overlay{
+.showcase-overlay{
     width: 100%;
     height: 100vh;
     background-color: rgba(0,0,0,0.7);
@@ -166,7 +168,7 @@ background-color: rgba(255, 169, 2, 1);
 }
 
 
-.article{
+.showcase-text-container{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -175,7 +177,7 @@ background-color: rgba(255, 169, 2, 1);
     max-width: 1000px;
     margin:  auto;
   }
-.article h1{
+.showcase-text-container h1{
     display: flex;
     flex-wrap: nowrap;
     font-size: 75px;
@@ -185,20 +187,21 @@ background-color: rgba(255, 169, 2, 1);
     text-align: center;
 
 }
-.article p{
-    max-width: 865px;
+.showcase-text-container p{
     line-height: 29.45px;
     font-weight: 400;
     font-size: 15px;
     color: white;
     text-align: center;
     margin-top: 28px;
+    max-width: 900px;
 }
-.article h4{
+.showcase-text-container h4{
     margin-top: 28px;
     font-size: 36px;
     line-height: 70.67px;
     font-weight: 700;
+    color: rgba(255, 169, 2, 1)
 }
 .mobile-submenu-container{
     display: none;
@@ -277,29 +280,62 @@ background-color: rgba(255, 169, 2, 1);
         width: 40%;
     }
 } */
-@media only screen and (max-width: 906px){
-    .article{
-        padding: 0 10px 0 10px;
-    }
-    .article h1{
-        font-size: 42px;
-    }
-    .article p{
-        font-size: 14px;
-    }
-    .aricle h4{
-        font-size: 26px;
+@media screen and (max-width: 1170px) and (min-width: 992px) {
+    .max-width-container{
+        max-width: 960px; ;
     }
 }
-@media only screen and (max-width: 720px){
+@media screen and (max-width: 992px) and (min-width: 768px){
+    
+    .max-width-container{
+        max-width: 720px; ;
+    }
+    .showcase-text-container{
+        padding: 0 10px 0 10px;
+    }
+    .showcase-text-container h1{
+        font-size: 54px;
+    }
+    .showcase-text-container p{
+        font-size: 14px;
+        max-width: 640px;
+    }
+    .showcase-text-container h4{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 576px){
+    
+    .max-width-container{
+        max-width: 560px;
+    }
     .search-input-container{
         display: none;
     }
+    .search-input-container{
+        display: none;
+    }
+    .showcase-text-container h1{
+        font-size: 46px;
+    }
+    .showcase-text-container p{
+        font-size: 14px;
+        max-width: 550px;
+    }
+    .showcase-text-container h4{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 576px){
+   
+.search-input-container{
+        display: none;
+}
 
 .header-container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
  }
  .social-media-container{
     margin-top: 10px;
@@ -392,16 +428,17 @@ input[type="checkbox"]:checked ~ .mobile-submenu-container {
     text-align: center;
     margin: 10px 0;
 }
-.article{
+.showcase-text-container{
     padding: 0 10px 0 10px;
 }
-.article h1{
-    font-size: 30px;
+.showcase-text-container h1{
+    font-size: 36px;
 }
-.article p{
+.showcase-text-container p{
        font-size:  10px;
+       max-width: 440px;
 }
-.article h4{
-    font-size: 20px;
+.showcase-text-container h4{
+    font-size: 26px;
 }
 }
