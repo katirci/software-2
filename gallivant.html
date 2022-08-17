@@ -9,16 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
-    <script src=".//js/gallivant.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
 
 </head>
 <body>
     <header>
-            <div class="header-container max-width">
+            <div class="header-container container">
                 <div class="desktop-menu-container">
                     <div class="header-logo">
                         <a href="" class="header-logo-link">
@@ -106,7 +103,7 @@
                     </div>
                 </div>
             
-                <div class="menu-container max-width">
+                <div class="menu-container container">
                     <ul class="menu-title">
                         <li class="menu">
                             <a href="" class="menu-link">
@@ -186,92 +183,64 @@
                 </div>
             </div>       
         </section>
-        <section class="swiper-showcase max-width">
-            <h3 class="category-title">
-                Choose A Category
-            </h3>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide solo">Solo Travel</div>
-                    <div class="swiper-slide mount">Mount Travel</div>
-                    <div class="swiper-slide jungal">Jungal Travel</div>
-                    <div class="swiper-slide road">Road Travel</div>
-                    <div class="swiper-slide ocean">Ocean Travel</div>
-                    <div class="swiper-slide solo">Solo Travel</div>
-                    <div class="swiper-slide mount">Mount Travel</div>
-                    <div class="swiper-slide jungal">Jungal Travel</div>
-                    <div class="swiper-slide jungal">Jungal Travel</div>
-                    <div class="swiper-slide road">Road Travel</div>
-                    <div class="swiper-slide ocean">Ocean Travel</div>
-                    <div class="swiper-slide solo">Solo Travel</div>
-                    <div class="swiper-slide mount">Mount Travel</div>
-                    <div class="swiper-slide jungal">Jungal Travel</div>
+        <section class="category">
+            <div class="category-container container">
+                <div class="category-showcase-container">
+                    <div class="category-showcase">
+                            <h3>Choose A Category</h3>
+                            
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                            <p>Solo Travel</p>
+                                            <img src="./images/1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>Mount Travel</p>
+                                        <img src="./images/2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>Jungal Travel</p>
+                                        <img src="./images/3.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>Road Travel</p>
+                                        <img src="./images/4.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>Ocean Travel</p>
+                                        <img src="./images/5.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>Old City Travel</p>
+                                        <img src="./images/6.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>Road Travel</p>
+                                        <img src="./images/4.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>Ocean Travel</p>
+                                        <img src="./images/5.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>Old City Travel</p>
+                                        <img src="./images/6.png" alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
         </section>
+
     </main>
-        
-            <!-- Swiper JS -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                cssMode: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                },
-                mousewheel: true,
-                keyboard: true,
-                });
-            </script>   
-      
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/gallivant.js"></script>
 </body>
 
-        <!-- <section class="category-showcase">
-            <div class="category-container">
-                
-                    
-                
-                <div class="travel-container">
-                    <a href="" class="travel-arrow-container">
-                        <img src=".//images/lef.png" alt="" class="travel-arrow">
-                    </a>
-                    <div class="travel-slider-container">
-                        <div class="travel solo">
-                            Solo Travel
-                        </div>
-                        <div class="travel mount">
-                            Mount Travel
-                        </div>
-                        <div class="travel jungal">
-                            Jungal Travel
-                        </div>
-                        <div class="travel road">
-                            Road Travel
-                        </div>
-                        <div class="travel ocean">
-                            Ocean Travel
-                        </div>
-                        <div class="travel old-city ">
-                            Old City Travel
-                        </div>
-                    </div>
-                    <a href="" class="travel-arrow-container">
-                        <img src=".//images/right.png" alt="" class="travel-arrow">
-                    </a>  
-                </div>
-                <div class="slider-button-container">
-                    <input type="button" value="" class="slider-button">
-                    <input type="button" value="" class="slider-button">
-                    <input type="button" value="" class="slider-button">
-                </div>
-            </div>
-        </section> -->
+        
